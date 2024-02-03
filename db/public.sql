@@ -9,6 +9,13 @@ create table tbl_libro
     creado TIMESTAMP DEFAULT current_timestamp
 );
 
+create table tbl_categoria
+(
+id serial primary key,
+nombre varchar (50),
+ creado TIMESTAMP DEFAULT current_timestamp
+);
+
 insert into tbl_libro
 (nombre, autor, genero, paginas)
 values
@@ -23,5 +30,6 @@ set
   genero = 'Thriller',
   paginas = '400'
 where id = '2';
+
 
 
